@@ -1,7 +1,7 @@
 package org.usfirst.frc.team6662.robot.subsystems;
 
+import org.usfirst.frc.team6662.robot.commands.TankDriveWithXbox;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
-
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
@@ -28,7 +28,7 @@ public class Drivetrain extends Subsystem{
 
 	@Override
 	protected void initDefaultCommand() {
-		//make TankDriveWithXbox and insert here
+		setDefaultCommand(new TankDriveWithXbox());
 	}
 	
 }
